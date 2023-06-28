@@ -97,8 +97,8 @@
 								$footer.hide();
 
 							// Show main, article.
-								$main.show();
-								$article.show();
+								// $main.show();
+								// $article.show();
 
 							// Activate article.
 								$article.addClass('active');
@@ -223,7 +223,7 @@
 
 							// Hide article, main.
 								$article.hide();
-								$main.hide();
+								// $main.hide();
 
 							// Show footer, header.
 								$footer.show();
@@ -257,8 +257,8 @@
 					setTimeout(function() {
 
 						// Hide article, main.
-							$article.hide();
-							$main.hide();
+							// $article.hide();
+							// $main.hide();
 
 						// Show footer, header.
 							$footer.show();
@@ -287,23 +287,23 @@
 			};
 
 		// Articles.
-			$main_articles.each(function() {
+			// $main_articles.each(function() {
 
-				var $this = $(this);
+			// 	var $this = $(this);
 
-				// Close.
-					$('<div class="close">Close</div>')
-						.appendTo($this)
-						.on('click', function() {
-							location.hash = '';
-						});
+			// 	// Close.
+			// 		$('<div class="close">Close</div>')
+			// 			.appendTo($this)
+			// 			.on('click', function() {
+			// 				location.hash = '';
+			// 			});
 
-				// Prevent clicks from inside article from bubbling.
-					$this.on('click', function(event) {
-						event.stopPropagation();
-					});
+			// 	// Prevent clicks from inside article from bubbling.
+			// 		$this.on('click', function(event) {
+			// 			event.stopPropagation();
+			// 		});
 
-			});
+			// });
 
 		// Events.
 			$body.on('click', function(event) {
@@ -388,8 +388,8 @@
 		// Initialize.
 
 			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
+				// $main.hide();
+				// $main_articles.hide();
 
 			// Initial article.
 				if (location.hash != ''

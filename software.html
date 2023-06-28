@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alice V2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script data-reload src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/flamethrower-router@0.0.0-meme.12/dist/main.min.js"></script> -->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <!-- Intro -->
+        <article id="work" class="workAround">
+          <h2 class="major">Software</h2>
+          <!-- <span class="image main"><img src="https://sloanreview.mit.edu/wp-content/uploads/2020/09/EG2-Redman-Davenport-Serious-Data-Science-2400x1260-1-1200x630.jpg" alt="" /></span> -->
+          <p>ALICE's architecture embraces a modular approach, dividing the system into distinct services responsible for specific functionalities and features. These services encompass speech recognition, natural language processing, home control, dreaming, social media integration, and more.</p>
+          <div style="display: flex; justify-content: center">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_ERxJFuNsrR.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+          </div>
+          <p>For Alice to hear what you are saying, the user has to say a wake word first. Employing deep learning techniques and phoneme analysis, this system detects a designated wake word, such as "Hey ALICE," which serves as a trigger to activate the speech recognition module.</p>
+          <p>The Speech Recognition module seamlessly integrates with the Google Speech to Text API, leveraging its advanced capabilities to accurately convert spoken words into text representations. This processed audio input is then passed to the Neuron Module.</p>
+          <p>The Neuron module comprises a range of specialised algorithms, each performing an independent function. For instance, the Home Control neuron utilises tailored algorithms for home automation, enabling ALICE to effortlessly interact with smart devices and execute commands based on user instructions. P.A module is integrated with users gmail account, calendar, to-do list, google meetings allowing users to control their schedules with just one voice command away. As of today's publication date, ALICE is integrated with 24 neurons each performing independent tasks.</p>
+          <p>ALICE leverages the power of GPT-2 (Generative Pre-trained Transformer 2) within her knowledge database, enabling her to provide a comprehensive and sophisticated understanding of a vast array of topics.The integration of GPT-2 enhances ALICE's ability to engage in creative and imaginative dialogue. With its generative capabilities, GPT-2 enables ALICE to generate contextually relevant and coherent text, fostering interactive and dynamic conversations with users.</p>
+          <p>Furthermore, ALICE encompasses a Social Media module, enabling seamless control and interaction with popular platforms like Telegram, Twitter, and Instagram. This module enables ALICE to post updates, send messages, and actively engage with users across social media, seamlessly integrating her digital assistant capabilities into the realm of social networking.</p>
+          <a href="/">
+            <div class="close">Close</div>
+          </a>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+
+          <li>
+            <a href="https://www.instagram.com/alice.v2.1" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/v2alice" class="icon brands fa-github"><span class="label">GitHub</span></a>
+          </li>
+        </ul>
+        <p class="copyright">&copy; ALICE 2023</p>
+      </footer>
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sane.js" type="module"></script>
+  </body>
+</html>
