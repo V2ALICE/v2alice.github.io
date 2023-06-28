@@ -10,8 +10,8 @@
 		border-radius: _size(border-radius);
 		border: 0;
 		display: inline-block;
-		position: relative;
 
+		position: relative;
 		&:before {
 			@include vendor('pointer-events', 'none');
 			background-image: url('../../images/overlay.png');
@@ -30,6 +30,8 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+			max-height: 330px;
+
 		}
 
 		&.left,
@@ -67,9 +69,10 @@
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;
 			width: 100%;
-
+			display: flex;
+			justify-content: center;
 			img {
-				width: 100%;
+				// width: 100%;
 			}
 		}
 
