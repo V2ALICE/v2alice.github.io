@@ -1288,20 +1288,35 @@ input, select, textarea {
 				display: none;
 			}
 
-		#header .logo {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 5.5rem; /* Adjust to the size of your logo container */
-			width: 5.5rem; /* Adjust to the size of your logo container */
-			border-radius: 100%;
-			border: solid 1px #ffffff; /* If you have a border */
-		}
-
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
-
+			#header .logo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 5.5rem; /* Adjust to the size of your logo container */
+				width: 5.5rem; /* Adjust to the size of your logo container */
+				border-radius: 100%;
+				border: solid 1px #ffffff; /* If you have a border */
+				overflow: hidden; /* This will ensure that any overflow is hidden */
+			  }
+			  
+			  #header .logo img.svg-icon {
+				max-width: 100%;  /* Limits the image to the width of the container */
+				max-height: 100%; /* Limits the image to the height of the container */
+				object-fit: contain; /* Ensures the image is scaled properly within the container */
+			  }
+			  
+			  /* Additional Media Query for smaller devices if necessary */
+			  @media (max-width: 768px) {
+				#header .logo {
+				  height: 4rem; /* Smaller size for mobile */
+				  width: 4rem; /* Smaller size for mobile */
+				}
+				#header .logo img.svg-icon {
+				  max-width: 90%; /* Gives some room within the container */
+				  max-height: 90%; /* Gives some room within the container */
+				}
+			  }
+			  
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
