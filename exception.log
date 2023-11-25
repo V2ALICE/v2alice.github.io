@@ -1,0 +1,190 @@
+Traceback (most recent call last):
+  File "/Users/stephenkitomary/Downloads/complete.py", line 416, in <module>
+    login(driver, email, course)
+  File "/Users/stephenkitomary/Downloads/complete.py", line 55, in login
+    email_input = driver.find_element_by_xpath("//input[@type='email']")
+AttributeError: 'WebDriver' object has no attribute 'find_element_by_xpath'
+
+################################################################################
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <title>zyBooks</title>
+        <meta content="" name="description">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="/assets/favicon.ico" integrity="" rel="icon">
+
+        
+<meta name="zybooks-web/config/environment" content="%7B%22environment%22%3A%22production%22%2C%22locationType%22%3A%22history%22%2C%22modulePrefix%22%3A%22zybooks-web%22%2C%22rootURL%22%3A%22%2F%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%2C%22EXTEND_PROTOTYPES%22%3Atrue%7D%2C%22APP%22%3A%7B%22ACCESS_DEV%22%3Afalse%2C%22ADMIN_URL%22%3A%22https%3A%2F%2Fadmin.zybooks.com%2F%22%2C%22ANALYTICS_URL%22%3A%22https%3A%2F%2Fanalytics.zybooks.com%2F%22%2C%22API_HOST%22%3A%22https%3A%2F%2Fzyserver.zybooks.com%2Fv1%2F%22%2C%22APP_URL%22%3A%22https%3A%2F%2Flearn.zybooks.com%2F%22%2C%22AUTHOR_URL%22%3A%22https%3A%2F%2Fauthor.zybooks.com%2F%22%2C%22AUTHORS_ONLY%22%3Afalse%2C%22BUILDKEY%22%3A%22893bfb9b-0053-ab34-10c0-ea31dd5acd33%22%2C%22CLOUDSEARCH_ENDPOINT%22%3A%22https%3A%2F%2Foqsgv0xbv7.execute-api.us-west-2.amazonaws.com%2Fproduction%22%2C%22CODINGROOMS_URL%22%3A%22https%3A%2F%2Fapp.codingrooms.com%22%2C%22DISABLE_EVENTS%22%3Afalse%2C%22EVENTS_API_HOST%22%3A%22https%3A%2F%2Fzyevents.zybooks.com%2F%22%2C%22EVENTS_API_TARGET%22%3A%22v1%2Fstream%22%2C%22ROUTE_IF_ALREADY_AUTHENTICATED%22%3A%22library%22%2C%22SALES_URL%22%3A%22https%3A%2F%2Fsales.zybooks.com%2F%22%2C%22SESSION_KEY_SUFFIX%22%3A%225%22%2C%22STREAMLIT_API_HOST%22%3A%22https%3A%2F%2Fzystreamlit.zybooks.com%2Fv1%2F%22%2C%22STREAMLIT_APP_DOMAIN%22%3A%22.streamlit.zybooks.com%2F%22%2C%22TERMINAL_SOCKET_URL%22%3A%22wss%3A%2F%2Fzyterminal.zybooks.com%2Fws%22%2C%22WHAT_IS_ZYBOOK_VIDEO_URL%22%3A%22https%3A%2F%2Fvimeo.com%2F285133146%2F48bc90afb5%22%2C%22ZYBOOKS_URL%22%3A%22https%3A%2F%2Flearn.zybooks.com%2F%22%2C%22ZYSERVER2_API_HOST%22%3A%22https%3A%2F%2Fzyserver2.zybooks.com%2Fv1%2F%22%2C%22ITLABS_API_HOST%22%3A%22https%3A%2F%2Fitlabs-server.zybooks.com%2Fv1%2F%22%2C%22ZYSERVER2_DR_API_HOST%22%3A%22https%3A%2F%2Fzyserver2.dr.zybooks.com%2Fv1%2F%22%2C%22ZYEXAM_SERVER_API_HOST%22%3A%22https%3A%2F%2Fzyexam-server.zybooks.com%2Fv1%2F%22%2C%22JUPYTERHUB_HOST%22%3A%22https%3A%2F%2Fjupyterhub.zybooks.com%2F%22%7D%2C%22contentSecurityPolicy%22%3A%7B%22connect-src%22%3A%22'self'%20https%3A%2F%2F*.google-analytics.com%20https%3A%2F%2F*.analytics.google.com%20https%3A%2F%2F*.googletagmanager.com%20https%3A%2F%2Ffonts.googleapis.com%20https%3A%2F%2F*.stripe.com%20https%3A%2F%2Fmaps.googleapis.com%20https%3A%2F%2F*.nr-data.net%20https%3A%2F%2Fzyserver.zybooks.com%2Fv1%2F%22%2C%22default-src%22%3A%22'none'%22%2C%22font-src%22%3A%22'self'%20fonts.gstatic.com%20%22%2C%22frame-src%22%3A%22'self'%20https%3A%2F%2F*.stripe.com%22%2C%22img-src%22%3A%22'self'%20https%3A%2F%2F*.google-analytics.com%20https%3A%2F%2F*.googletagmanager.com%20https%3A%2F%2F*.stripe.com%20https%3A%2F%2F*.nr-data.net%20http%3A%2F%2Fupload.wikimedia.org.com%2F%22%2C%22media-src%22%3A%22'self'%22%2C%22script-src%22%3A%22'self'%20'unsafe-inline'%20'unsafe-eval'%20https%3A%2F%2F*.googletagmanager.com%20https%3A%2F%2F*.stripe.com%20https%3A%2F%2Fmaps.googleapis.com%20https%3A%2F%2F*.newrelic.com%20https%3A%2F%2F*.nr-data.net%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%20https%3A%2F%2Ffonts.googleapis.com%22%2C%22frame-ancestors%22%3A%22*%22%7D%2C%22moment%22%3A%7B%22includeTimezone%22%3A%22subset%22%7D%2C%22stripe%22%3A%7B%22lazyLoad%22%3Atrue%2C%22publishableKey%22%3A%22pk_live_6WfpM1NZl9sSnKivV9WvGD2H%22%7D%2C%22ember-froala-editor%22%3A%7B%22key%22%3A%22mPD4tD2F2B2D1H1A1D3lFa1f1PVWEd2Fa1XHTHh1THMMb1NCg1tA2B2C2E2C5F1A1F1I4C10%3D%3D%22%2C%22videoAllowedTypes%22%3A%5B%22mp4%22%5D%2C%22videoMaxSize%22%3A300000000%2C%22videoUploadMethod%22%3A%22POST%22%2C%22videoInsertButtons%22%3A%5B%22videoUpload%22%5D%7D%2C%22newRelic%22%3A%7B%22agent%22%3A%22js-agent.newrelic.com%2Fnr-1216.min.js%22%2C%22applicationId%22%3A%22772289686%22%2C%22licenseKey%22%3A%2245d36ecda8%22%2C%22spaMonitoring%22%3Afalse%2C%22beacon%22%3A%22bam.nr-data.net%22%2C%22errorBeacon%22%3A%22bam.nr-data.net%22%7D%2C%22ember-websockets%22%3A%7B%22socketIO%22%3Afalse%7D%2C%22resourceHost%22%3A%22https%3A%2F%2Fzytools.zybooks.com%2FzyBooks2%2F%22%2C%22staticResourceHost%22%3A%22https%3A%2F%2Fstatic-resources.zybooks.com%2F%22%2C%22imageHost%22%3A%22https%3A%2F%2Fzytools.zybooks.com%2FzyAuthor%2F%22%2C%22zydeHost%22%3A%22http%3A%2F%2Fzyde2.zyante.com%22%2C%22terminalSocketUrl%22%3A%22wss%3A%2F%2Fzyterminal.dev.kube.zybooks.com%2Fws%22%7D">
+
+        <link href="/assets/vendor-b693f3fea5fbb39e2229c5a37e96083e.css" integrity="" rel="stylesheet">
+<link rel="stylesheet" href="/assets/chunk.27.7fad5d68fe93d8c8181b.css" integrity="sha256-f41ucRRs+atRbPsjq3JLjU+2/nb565KteQF+XMJPGdE= sha512-RVQ99EmbHebZcmofX1Mm5WFFo1wlc+F3wE1tVGFPPxnbdEsykyNzx5RE+j+XF1IQByZZ0EXnAs+beRdeGsa6MA==">
+        <link href="/assets/zybooks-web-853aa87e07e01e7b64bed1b4fc74db97.css" integrity="" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" integrity="" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp|Material+Symbols+Outlined" integrity="" rel="stylesheet">
+        <link href="/assets/basicLightbox.min-69bdb9cd40a5bbcb4587424b1c70f89b.css" integrity="" rel="stylesheet">
+
+        <script src="https://js-agent.newrelic.com/nr-1216.min.js"></script><script integrity="" src="/assets/vendor-73a92da413307ee1690c1eee9dbacda3.js"></script>
+<script src="/assets/chunk.27.7fad5d68fe93d8c8181b.js" integrity="sha256-QGXPcVbDZKqQObWXhHN82L8Hs3F4AM+kuDeyx/J3Go0= sha512-vaWkWuL38QN58PfgX0QYfnZ53QQTRaoR7/tMDPk6kqJsPQthdp7/CoaDsLx+A6WoH80C3Da8fuJmm7Xbuc5uxg=="></script>
+<script src="/assets/chunk.143.5c97b55c1e3e9ee8a2ff.js" integrity="sha256-J27gtFju7yqzHzvmNtVUFBCVD+xS+2/Cs4ALBG9lT4Y= sha512-NSJ8lrpeU5OH+Ok+JO8kmcmjXD0s3EzxQdqGUhojtfltC2gghjjTh+sX9dYyXE1h3dRe/w6bgR36s1E3Fj4g7Q=="></script>
+        <script integrity="" src="/assets/zybooks-web-18c382bda714013d231b76d2ad4fc7eb.js"></script>
+        <script integrity="" src="/assets/ace/ace.js"></script>
+        <script integrity="" src="/zycommon-web/assets/web-workers/string-diff-e0bbca1822d01af91ebb85faf6848c6b.js"></script>
+
+        
+    </head>
+    <body class="do-not-process-mathjax-2 ember-application">
+        
+
+        
+
+        <div id="ember-basic-dropdown-wormhole"></div>
+
+        <script integrity="" src="https://7pdrvq9vj4n5.statuspage.io/embed/script.js"></script><iframe src="https://7pdrvq9vj4n5.statuspage.io/embed/frame" style="position: fixed; border: medium; box-shadow: rgba(9, 20, 66, 0.25) 0px 20px 32px -8px; z-index: 9999; transition: left 1s ease 0s, bottom 1s ease 0s, right 1s ease 0s; height: 115px; width: 320px; left: -9999px; right: -9999px; bottom: calc(100% - 175px);" title="zyBooks Status" aria-hidden="true" tabindex="-1"></iframe>
+    
+
+
+
+<header class="top-toolbar " role="none">
+    <div class="left-buttons">
+        <div class="zb-breadcrumbs hide-nav-menu-button">
+<!---->
+        <div class="logo">
+                <a id="ember4" class="ember-view active" href="/signin"><img alt="zyBooks" height="22px" src="/zycommon-web/assets/logo.svg" width="83px"></a>
+        </div>
+
+<!----></div>
+
+    </div>
+    <div class="right-buttons">
+<!----><!----><!----><!---->        <a class="no-underline zb-button help-button" href="http://support.zybooks.com" rel="noopener noreferrer" target="_blank">
+            <i aria-label="Help/FAQ" class="zb-icon material-icons med grey  " role="img">
+            help
+<!----></i>
+
+                <span aria-hidden="true">Help/FAQ</span>
+        </a>
+                <a id="ember5" class="ember-view no-underline logged-out-button zb-button raised" href="/signup">Create account</a>
+    </div>
+</header>
+
+<!---->
+<!---->
+<div aria-label="zybook page" class="route-container signin-page no-margin-left " role="main">
+<!---->
+    <nav class="zb-nav-menu hide-nav-menu">
+    <ul class="level-1">
+<!---->    </ul>
+</nav>
+
+
+    <div id="ember6" class="zb-card ember-view signin-card"><div class="zb-card-content ">
+    
+    <div class="flex-1">
+        <h1 class="card-header-large">Sign in</h1>
+<!----><!----><!----><!---->            <div class="zb-input-container a11yPlaceholder user-email  label-present  info  " id="e55f0762-d0aa-4bf8-8954-9770e2e9dcea">
+            <label id="e172e54f-5649-4e59-aa3f-e7b5fc836bb8">
+                Email
+            </label>
+<!---->        <input aria-describedby="signInErrorMessage" aria-labelledby="e172e54f-5649-4e59-aa3f-e7b5fc836bb8" class="zb-input  " autocomplete="email" type="email">
+<!----><!----><!---->    </div>
+
+            <div class="zb-input-container a11yPlaceholder user-password  label-present  info  " id="ce74fbb4-5bb3-4d17-8ca4-fc841e39d8c0">
+            <label id="f1205282-7cd1-4054-95b0-1ef0c71abef3">
+                Password
+            </label>
+<!---->        <input aria-describedby="signInErrorMessage" aria-labelledby="f1205282-7cd1-4054-95b0-1ef0c71abef3" class="zb-input  " autocomplete="current-password" type="password">
+<!----><!----><!---->    </div>
+
+            <div class="zb-checkbox view-password-checkbox  secondary label-present right">
+        <input aria-labelledby="dc5b920b-dfcb-4672-ae00-b6ee5aebe36a" type="checkbox">
+            <label id="dc5b920b-dfcb-4672-ae00-b6ee5aebe36a">Show password</label>
+    </div>
+
+    </div>
+
+    <div class="flex-1 flex flex-row items-center error-message-container">
+<!---->    </div>
+
+    <div class="flex-1">
+        <div class="disclaimer-text">
+            <small>
+                By signing in, I agree to zyBook's <a class="link" href="http://www.zybooks.com/terms-of-use/" rel="noopener noreferrer" target="_blank">terms of service</a>
+                and <a class="link" href="http://www.zybooks.com/privacy-policy/" rel="noopener noreferrer" target="_blank">privacy conditions</a>.
+            </small>
+        </div>
+
+        <button class="zb-button  primary  raised        full-width    signin-button" type="button">
+<!---->                <span class="title">Sign in</span>
+<!----></button>
+
+
+        <div class="ancillary-actions-container">
+            <a id="ember7" class="ember-view no-underline forgot-password-link zb-button primary" href="/forgot">
+                Forgot password?
+            </a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+    <footer class="zb-footer">
+    <ul>
+        <li>
+            <a href="https://twitter.com/zyBooks" rel="noopener noreferrer" target="_blank">
+                Twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/blog/" rel="noopener noreferrer" target="_blank">
+                Blog
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/about-us/" rel="noopener noreferrer" target="_blank">
+                About us
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/authoring-team/" rel="noopener noreferrer" target="_blank">
+                Authors
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/catalog/" rel="noopener noreferrer" target="_blank">
+                Catalog
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/research/" rel="noopener noreferrer" target="_blank">
+                Research
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/pricing/" rel="noopener noreferrer" target="_blank">
+                Pricing
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/careers/" rel="noopener noreferrer" target="_blank">
+                Careers
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/terms-of-use/" rel="noopener noreferrer" target="_blank">
+                Terms of service
+            </a>
+        </li>
+        <li>
+            <a href="https://www.zybooks.com/privacy-policy/" rel="noopener noreferrer" target="_blank">
+                Privacy
+            </a>
+        </li>
+<!---->    </ul>
+</footer>
+
+
+
+<!----></div>
+</body></html>
